@@ -1,0 +1,97 @@
+<section class="auth-shell">
+  <div class="auth-shell__aura auth-shell__aura--cyan"></div>
+  <div class="auth-shell__aura auth-shell__aura--violet"></div>
+
+  <div class="auth-layout">
+    <div class="auth-intro">
+      <p class="section-eyebrow">Mystical Quantum Academia</p>
+      <div class="lumi-logo">
+        <span class="lumi-logo__halo"></span>
+        <h1 class="lumi-logo__word">LUMI</h1>
+      </div>
+      <p class="auth-intro__copy">
+        Enter a cinematic observatory for theory, signals and luminous systems. The first
+        shell is a gated dark-glass workspace with a local prototype auth flow.
+      </p>
+
+      <div class="auth-intro__metrics">
+        <div class="metric-chip">
+          <p class="metric-chip__label">Field</p>
+          <p class="metric-chip__value">Quantum Interface</p>
+        </div>
+        <div class="metric-chip">
+          <p class="metric-chip__label">Signal</p>
+          <p class="metric-chip__value">Stable Pulse</p>
+        </div>
+        <div class="metric-chip">
+          <p class="metric-chip__label">Mode</p>
+          <p class="metric-chip__value">Dark Glass</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="auth-card glass-panel">
+      <div class="auth-card__header">
+        <p class="section-eyebrow">Access Gate</p>
+        <h2 class="auth-card__title">Initialize your LUMI session</h2>
+        <p class="auth-card__copy">
+          These buttons are local placeholders for now. They only toggle the app state and
+          persist it in local storage.
+        </p>
+      </div>
+
+      <div class="auth-card__actions">
+        <button
+          type="button"
+          class="auth-provider auth-provider--google"
+          (click)="continueWith('google')"
+        >
+          <span class="auth-provider__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20.5 12.2c0-.7-.1-1.3-.2-1.9H12v3.6h4.8a4.1 4.1 0 0 1-1.8 2.7v2.2h2.9c1.7-1.5 2.6-3.8 2.6-6.6Z"
+                fill="#00F0FF"
+              />
+              <path
+                d="M12 20.8c2.4 0 4.4-.8 5.9-2.1L15 16.5c-.8.5-1.8.8-3 .8-2.3 0-4.2-1.5-4.9-3.6H4v2.3a8.9 8.9 0 0 0 8 4.8Z"
+                fill="#8A2BE2"
+              />
+              <path
+                d="M7.1 13.7a5.2 5.2 0 0 1 0-3.3V8.1H4a8.8 8.8 0 0 0 0 7.9l3.1-2.3Z"
+                fill="#A0ECFF"
+              />
+              <path
+                d="M12 6.7c1.3 0 2.5.5 3.4 1.3l2.5-2.5C16.4 4 14.4 3.2 12 3.2A8.9 8.9 0 0 0 4 8.1l3.1 2.3c.7-2.1 2.6-3.7 4.9-3.7Z"
+                fill="#F5FBFF"
+              />
+            </svg>
+          </span>
+          <span>Continue with Google</span>
+        </button>
+
+        <button
+          type="button"
+          class="auth-provider auth-provider--apple"
+          (click)="continueWith('apple')"
+        >
+          <span class="auth-provider__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M15.6 3.5c-.8 0-1.9.6-2.5 1.4-.6.7-1 1.8-.8 2.8 1 0 2-.5 2.7-1.3.6-.7 1-1.7.8-2.9h-.2Zm3.7 14.6c-.5 1.1-.8 1.6-1.4 2.6-.8 1.3-1.9 2.9-3.3 2.9-1.2 0-1.6-.8-3.2-.8s-2.1.8-3.3.8c-1.4 0-2.4-1.4-3.2-2.7C3 17.3 2.4 13.3 4 10.8c1.1-1.8 2.9-2.9 4.6-2.9 1.3 0 2.5.9 3.8.9 1.2 0 2-.9 3.8-.9 1.5 0 3 .8 4 2.1-3.5 1.9-2.9 7 .1 8.1Z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+          <span>Continue with Apple</span>
+        </button>
+      </div>
+
+      <div class="auth-card__footer">
+        <div class="auth-divider"></div>
+        <p class="auth-footnote">
+          Prototype state only. No real provider handshake yet.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
